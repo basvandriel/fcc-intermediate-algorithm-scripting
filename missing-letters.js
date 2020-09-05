@@ -14,10 +14,7 @@ function fearNotLetter(str) {
         (letters.findIndex(letter => letter == str.slice(-1))) + 1,
     );
 
-
-
-
-    return str;
+    return sliced.filter(letter => ![...str].includes(letter))[0];
 }
 
 fearNotLetter("ceg");
